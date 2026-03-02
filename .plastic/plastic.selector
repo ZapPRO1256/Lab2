@@ -1,4 +1,0 @@
-repository "Galaxy Shooter Air Force War/Galaxy Shooter Air Force War@7971954358023@cloud"
-  path "/"
-    br "/main"
-    co "/main"
