@@ -9,8 +9,6 @@ A classic top-down space shooter built in Unity 2D (URP). Control your ship, sho
 2. Open **Assets/Scenes/SampleScene**.
 3. Press **Play**.
 
-The scene already contains **GameBootstrap**, which creates the player, enemies, bullets, UI, and background when the game starts. No extra setup or menu steps are required.
-
 ## Controls
 
 - **WASD** or **Arrow keys** – Move
@@ -29,22 +27,18 @@ The scene already contains **GameBootstrap**, which creates the player, enemies,
 ## Project Structure
 
 - **Assets/Scripts/**
-  - `GameBootstrap.cs` – Creates the full game at runtime if nothing is in the scene
   - `GameManager.cs` – Score, lives, game over, restart
   - `PlayerController.cs` – Movement and shooting
   - `EnemyController.cs` – Enemy movement and optional shooting
   - `Projectile.cs` – Bullet behavior and collision
   - `ProjectilePool.cs` / `EnemyPool.cs` – Object pools
   - `SpawnManager.cs` – Enemy spawn timing and position
-  - `ScrollingBackground.cs` – Starfield scroll
+  - `LoopingBackgound.cs` – Starfield scroll
   - `GameUI.cs` – Score, lives, game over panel
   - `PlaceholderSprite.cs` – Runtime placeholder sprites
-- **Assets/Scripts/Editor/**
-  - `GalaxyShooterSetup.cs` – Menu item to add GameBootstrap and tags
 
 ## Customization
 
-- **Use your own art**: Create prefabs for Player, Enemy, and Player/Enemy bullets with the same components (colliders, scripts). Assign them in the scene and disable **Create If Missing** on GameBootstrap, or remove GameBootstrap and place your own GameManager, Player, Pools, SpawnManager, and UI.
 - **Difficulty**: Adjust `SpawnManager.spawnInterval`, `EnemyController.moveSpeed` / `canShoot` / `shootInterval`, and `GameManager.maxLives` in the Inspector.
 - **Player**: Tune `PlayerController.moveSpeed`, `fireRate`, and `maxHealth`.
 
@@ -52,6 +46,5 @@ The scene already contains **GameBootstrap**, which creates the player, enemies,
 
 - Unity 2022.3+ (project uses URP 2D and Input System)
 - Tags **Player** and **Enemy** are already set in the project.
-- If you remove **GameBootstrap** from the scene, use menu **Galaxy Shooter → Setup Scene** to add it back.
 
 Enjoy the game!
