@@ -1,3 +1,4 @@
+[📄 Work progress (Google Doc)](https://docs.google.com/document/d/18bgBX5ymBiVJAF-wxvamCA0bgchueAxAqZ2qiJQvAf4/edit?usp=sharing)
 # Galaxy Shooter: Air Force War
 
 A classic top-down space shooter built in Unity 2D (URP). Control your ship, shoot enemies, and survive as long as you can.
